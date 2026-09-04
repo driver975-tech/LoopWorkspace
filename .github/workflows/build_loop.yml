@@ -2,6 +2,11 @@ name: 4. Build Loop
 run-name: Build Loop (${{ github.ref_name }})
 on:
   workflow_dispatch:
+    inputs:
+      team_id:
+        description: 'Apple Team ID (use none for Signulous)'
+        required: false
+        default: 'none'
   schedule:
     # Check for updates every Sunday
     #   Later logic builds if there are updates or if it is the 2nd Sunday of the month
