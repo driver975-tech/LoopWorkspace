@@ -1,3 +1,1 @@
-git_url("https://github.com")
-storage_mode("git")
-type("development")
+# Файл по умолчанию
